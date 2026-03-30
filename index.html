@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchor: Emetophobia Relief — Support</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --deep: #0D0820;
+    --purple: #6B4FA0;
+    --lavender: #C5B8E8;
+    --soft: #EEF4FB;
+    --white: #F7F4FF;
+    --muted: #8B7CB8;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--deep);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(107,79,160,0.35) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 40% at 90% 80%, rgba(107,79,160,0.15) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 28px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    padding: 80px 0 50px;
+    text-align: center;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .anchor-icon {
+    font-size: 72px;
+    display: block;
+    margin-bottom: 24px;
+    filter: drop-shadow(0 0 30px rgba(107,79,160,0.7));
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+
+  h1 span { color: var(--lavender); }
+
+  .tagline {
+    font-size: 0.9rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--purple), transparent);
+    margin: 44px auto;
+  }
+
+  section {
+    margin-bottom: 64px;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  section:nth-child(2) { animation-delay: 0.1s; }
+  section:nth-child(3) { animation-delay: 0.2s; }
+  section:nth-child(4) { animation-delay: 0.3s; }
+  section:nth-child(5) { animation-delay: 0.4s; }
+  section:nth-child(6) { animation-delay: 0.5s; }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--lavender);
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: rgba(247, 244, 255, 0.72);
+    margin-bottom: 14px;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .feature-card {
+    background: rgba(107, 79, 160, 0.12);
+    border: 1px solid rgba(197, 184, 232, 0.15);
+    border-radius: 16px;
+    padding: 22px 20px;
+    transition: border-color 0.3s, background 0.3s;
+  }
+
+  .feature-card:hover {
+    background: rgba(107, 79, 160, 0.2);
+    border-color: rgba(197, 184, 232, 0.3);
+  }
+
+  .feature-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .feature-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .feature-desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .faq-item {
+    background: rgba(107, 79, 160, 0.08);
+    border: 1px solid rgba(197, 184, 232, 0.12);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 14px;
+  }
+
+  .faq-q {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .faq-a {
+    font-size: 0.95rem;
+    color: rgba(247, 244, 255, 0.65);
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  .contact-box {
+    background: rgba(107, 79, 160, 0.15);
+    border: 1px solid rgba(197, 184, 232, 0.2);
+    border-radius: 20px;
+    padding: 36px 32px;
+    text-align: center;
+  }
+
+  .contact-box h2 {
+    margin-bottom: 12px;
+  }
+
+  .contact-box p {
+    margin-bottom: 24px;
+  }
+
+  .email-btn {
+    display: inline-block;
+    background: var(--purple);
+    color: var(--white);
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 8px 30px rgba(107, 79, 160, 0.4);
+  }
+
+  .email-btn:hover {
+    background: #7D5FB8;
+    transform: translateY(-2px);
+  }
+
+  .disclaimer {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 64px;
+  }
+
+  .disclaimer p {
+    font-size: 0.85rem;
+    color: rgba(247, 244, 255, 0.4);
+    text-align: center;
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 0 48px;
+    border-top: 1px solid rgba(197, 184, 232, 0.08);
+    margin-bottom: 0;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: rgba(247, 244, 255, 0.25);
+    margin: 0;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <span class="anchor-icon">⚓</span>
+    <h1>Anchor<span>:</span><br>Emetophobia Relief</h1>
+    <p class="tagline">A calming companion for anxiety &amp; emetophobia</p>
+  </header>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>About Anchor</h2>
+    <p>Anchor is a calming support tool designed specifically for people living with emetophobia — the fear of vomiting — and anxiety. When a moment of panic hits, Anchor guides you through a proven, evidence-based relief flow using breathing exercises, grounding techniques, and reassurance.</p>
+    <p>Built with care, Anchor is not a medical device or a replacement for professional care. It is a personal companion for difficult moments.</p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <span class="feature-icon">🚨</span>
+        <div class="feature-title">Panic Button</div>
+        <p class="feature-desc">Immediate guided relief — reassurance, breathing, grounding, and coping statements in one flow.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🫁</span>
+        <div class="feature-title">Breathing Exercises</div>
+        <p class="feature-desc">Belly Breathing, 4-7-8, and Box Breathing with animated visual guidance and optional voice.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🌍</span>
+        <div class="feature-title">5-4-3-2-1 Grounding</div>
+        <p class="feature-desc">Engage all five senses to return to the present moment and interrupt the anxiety cycle.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📓</span>
+        <div class="feature-title">Journal</div>
+        <p class="feature-desc">Track your moments, triggers, and severity over time to spot patterns and progress.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📚</span>
+        <div class="feature-title">Learn</div>
+        <p class="feature-desc">25+ evidence-based facts about emetophobia and anxiety to reassure and educate.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🔔</span>
+        <div class="feature-title">Daily Encouragement</div>
+        <p class="feature-desc">A gentle daily notification celebrating your strength — even on the hardest days.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <p class="faq-q">Is Anchor a replacement for therapy?</p>
+      <p class="faq-a">No. Anchor is a personal support tool and is not a replacement for professional medical or psychological care. If emetophobia is significantly affecting your daily life, we encourage you to reach out to a qualified mental health professional who specialises in CBT and anxiety disorders.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">My journal entries disappeared. What happened?</p>
+      <p class="faq-a">Journal entries are stored locally on your device. If you delete the app and reinstall it, your entries will be lost. We recommend noting important entries elsewhere if you need to keep them long-term.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">The voice guidance isn't working. How do I fix it?</p>
+      <p class="faq-a">Make sure your iPhone is not on silent mode. You can also toggle voice guidance off and back on in Settings. If the issue persists, try closing and reopening the app.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">I'm not receiving my daily notifications. What should I check?</p>
+      <p class="faq-a">Go to your iPhone Settings → Notifications → Anchor and make sure notifications are allowed. Inside the app, go to Settings and make sure Daily Notification is toggled on and a time is selected.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Is my data private?</p>
+      <p class="faq-a">Yes. All your data including journal entries and settings are stored locally on your device only. Anchor does not collect, transmit, or store any personal data on external servers.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Can I use Anchor for general anxiety, not just emetophobia?</p>
+      <p class="faq-a">Absolutely. While Anchor is designed with emetophobia in mind, all of its tools — breathing exercises, grounding, journaling, and coping statements — are effective for general anxiety as well.</p>
+    </div>
+  </section>
+
+  <section class="contact-box">
+    <h2>Get in Touch</h2>
+    <p>Have a question, found a bug, or want to share feedback? We'd love to hear from you.</p>
+    <a href="mailto:anchorappsupport@gmail.com" class="email-btn">✉ anchorappsupport@gmail.com</a>
+  </section>
+
+  <div class="disclaimer">
+    <p>Anchor is a support tool and does not replace professional medical or psychological advice. If you are experiencing a mental health crisis, please contact a qualified health professional or crisis service in your area.</p>
+  </div>
+
+  <footer>
+    <p>© 2026 Anchor: Emetophobia Relief · All rights reserved</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
