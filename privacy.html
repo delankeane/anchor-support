@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchor: Emetophobia Relief — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --deep: #0D0820;
+    --purple: #6B4FA0;
+    --lavender: #C5B8E8;
+    --white: #F7F4FF;
+    --muted: #8B7CB8;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--deep);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(107,79,160,0.35) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 40% at 90% 80%, rgba(107,79,160,0.15) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 28px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    padding: 70px 0 40px;
+    text-align: center;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .anchor-icon {
+    font-size: 56px;
+    display: block;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 24px rgba(107,79,160,0.6));
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+  }
+
+  h1 span { color: var(--lavender); }
+
+  .updated {
+    font-size: 0.85rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--purple), transparent);
+    margin: 40px auto;
+  }
+
+  section {
+    margin-bottom: 48px;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--lavender);
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: rgba(247, 244, 255, 0.72);
+    margin-bottom: 14px;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 14px;
+  }
+
+  ul li {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: rgba(247, 244, 255, 0.72);
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 6px;
+  }
+
+  ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--purple);
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .highlight-box {
+    background: rgba(107, 79, 160, 0.12);
+    border: 1px solid rgba(197, 184, 232, 0.18);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 48px;
+  }
+
+  .highlight-box p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(247, 244, 255, 0.85);
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .contact-box {
+    background: rgba(107, 79, 160, 0.15);
+    border: 1px solid rgba(197, 184, 232, 0.2);
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .contact-box h2 { margin-bottom: 12px; }
+  .contact-box p { margin-bottom: 20px; }
+
+  .email-btn {
+    display: inline-block;
+    background: var(--purple);
+    color: var(--white);
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 8px 30px rgba(107, 79, 160, 0.4);
+  }
+
+  .email-btn:hover {
+    background: #7D5FB8;
+    transform: translateY(-2px);
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover { color: var(--lavender); }
+
+  footer {
+    text-align: center;
+    padding: 32px 0 48px;
+    border-top: 1px solid rgba(197, 184, 232, 0.08);
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: rgba(247, 244, 255, 0.25);
+    margin: 0;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <span class="anchor-icon">⚓</span>
+    <h1>Anchor<span>:</span> Privacy Policy</h1>
+    <p class="updated">Last updated: March 30, 2026</p>
+  </header>
+
+  <a href="./index.html" class="back-link">← Back to Support</a>
+
+  <div class="highlight-box">
+    <p>Anchor does not collect, transmit, or share any personal data. Everything stays on your device. That is our commitment to you.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>Overview</h2>
+    <p>Anchor: Emetophobia Relief ("Anchor", "we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how Anchor handles information when you use our iOS application.</p>
+    <p>The short version: Anchor collects no personal data. Everything you enter into the app — journal entries, settings, your name — is stored locally on your device only and is never transmitted to us or any third party.</p>
+  </section>
+
+  <section>
+    <h2>Information We Do Not Collect</h2>
+    <p>Anchor does not collect, store, or transmit any of the following:</p>
+    <ul>
+      <li>Personal identification information (name, email, address)</li>
+      <li>Health or medical information</li>
+      <li>Journal entries or mood tracking data</li>
+      <li>Device identifiers or advertising IDs</li>
+      <li>Location data</li>
+      <li>Usage analytics or crash reports</li>
+      <li>Any data that could be used to identify you</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Data Stored Locally on Your Device</h2>
+    <p>Anchor stores the following data locally on your iPhone using Apple's standard local storage. This data never leaves your device:</p>
+    <ul>
+      <li>Your name (if you choose to enter it in Settings)</li>
+      <li>Voice guidance preferences</li>
+      <li>Notification preferences and time</li>
+      <li>Journal entries including dates, severity ratings, triggers, and notes</li>
+    </ul>
+    <p>This data is deleted if you uninstall the app. It is not backed up to iCloud or any external server by Anchor. Apple's own iCloud backup system may include this data as part of your device backup depending on your iCloud settings.</p>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <p>If you enable daily encouragement notifications, Anchor uses Apple's local notification system to schedule these on your device. No data is sent to external servers to deliver these notifications. The notification content is generated locally on your device.</p>
+  </section>
+
+  <section>
+    <h2>Voice Guidance</h2>
+    <p>If you enable voice guidance, Anchor uses Apple's built-in text-to-speech system (expo-speech) which runs entirely on your device. No audio data is transmitted externally.</p>
+  </section>
+
+  <section>
+    <h2>Third Party Services</h2>
+    <p>Anchor does not integrate with any third-party analytics, advertising, or data collection services. We do not use Google Analytics, Firebase, or any similar tools.</p>
+    <p>Anchor is built using Expo and React Native. These frameworks do not collect personal data on our behalf.</p>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>Anchor is rated 9+ on the App Store. We do not knowingly collect any information from children under the age of 13. Since Anchor collects no data at all, there is no risk of children's data being collected or shared.</p>
+  </section>
+
+  <section>
+    <h2>Medical Disclaimer</h2>
+    <p>Anchor is a personal support tool and is not a medical device. It does not provide medical diagnoses, treatment plans, or professional psychological advice. If you are experiencing a mental health crisis or if emetophobia is significantly affecting your daily life, please reach out to a qualified mental health professional.</p>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>If we make changes to this Privacy Policy, we will update the "Last updated" date at the top of this page. We encourage you to review this page periodically. Continued use of Anchor after any changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section class="contact-box">
+    <h2>Questions?</h2>
+    <p>If you have any questions about this Privacy Policy or how Anchor handles your data, please get in touch.</p>
+    <a href="mailto:anchorappsupport@gmail.com" class="email-btn">✉ anchorappsupport@gmail.com</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Anchor: Emetophobia Relief · All rights reserved</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
